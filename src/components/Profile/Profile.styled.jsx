@@ -9,7 +9,8 @@ export const DescriptionBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
 `;
 
 export const UserImg = styled.img`
@@ -23,36 +24,37 @@ export const NameText = styled.p`
 export const Text = styled.p`
   margin: 0;
   margin-top: 10px;
+  color: #4e4c4c;
+  font-size: 30px;
 `;
 
 export const StatsList = styled.ul`
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 15px; */
 `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
+  flex-basis: 33.3%;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: #b4b2b2 solid 1px;
+  &:not(:last-child) {
+    border-right: #b4b2b2 solid 1px;
+  }
 `;
 
-// export const StatsList = styled.ul`
-//   list-style: none;
-//   display: flex;
-// `;
-
-// export const Container = styled.div`
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 40px;
-//   color: #010101;
-// `;
-// export const Container = styled.div`
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 40px;
-//   color: #010101;
-// `;
+export const StatsText = styled.span`
+  font-size: 22px;
+  color: #4e4c4c;
+`;
+export const StatsNum = styled.span`
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+`;
