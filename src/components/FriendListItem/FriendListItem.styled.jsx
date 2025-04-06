@@ -12,6 +12,7 @@ export const FriendItem = styled.li`
 `;
 
 const setColorCircle = props => {
+  //   console.log(props.isOnline);
   switch (props.isOnline) {
     case true:
       return 'green';

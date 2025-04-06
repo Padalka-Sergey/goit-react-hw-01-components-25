@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { FriendItems } from 'components/FriendList/FriendList.styled';
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
@@ -15,4 +15,15 @@ export const FriendList = ({ friends }) => {
       ))}
     </FriendItems>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ),
 };
