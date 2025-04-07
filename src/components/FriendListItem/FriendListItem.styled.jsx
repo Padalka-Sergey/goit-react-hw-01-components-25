@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FriendItem = styled.li`
   list-style: none;
-  /* margin-bottom: 20px; */
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 5px 2px rgba(150, 150, 150, 1);
@@ -12,8 +11,7 @@ export const FriendItem = styled.li`
 `;
 
 const setColorCircle = props => {
-  //   console.log(props.isOnline);
-  switch (props.isOnline) {
+  switch (Boolean(props.isonline)) {
     case true:
       return 'green';
 
